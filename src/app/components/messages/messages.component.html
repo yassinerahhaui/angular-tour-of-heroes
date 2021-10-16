@@ -1,0 +1,10 @@
+
+<div class="container">
+  <div class="col-md-6 mx-auto">
+    <div class="alert alert-success" role="alert" *ngIf="messageService.messages.length">
+      <h2>Messages</h2>
+      <button type="button" (click)="messageService.clear()" class="btn btn-warning">Clear Messages</button>
+      <div *ngFor="let message of messageService.messages">{{message}} </div>
+    </div>
+  </div>
+</div>
