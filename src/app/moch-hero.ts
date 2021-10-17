@@ -1,7 +1,7 @@
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
-  {'id': 1, 'name': 'yassine'},
+  {'id': 1, 'name': 'sabrine'},
   {'id': 2, 'name': 'ayoub'},
   {'id': 3, 'name': 'youssef'},
   {'id': 4, 'name': 'zakaria'},
@@ -9,7 +9,7 @@ export const HEROES: Hero[] = [
   {'id': 6, 'name': 'hamza'},
   {'id': 7, 'name': 'mohamed'},
   {'id': 8, 'name': 'nisrine'},
-  {'id': 9, 'name': 'sabrine'},
+  {'id': 9, 'name': 'yassine'},
   {'id': 10, 'name': 'aya'},
   {'id': 11, 'name': 'kawtar'},
 ]

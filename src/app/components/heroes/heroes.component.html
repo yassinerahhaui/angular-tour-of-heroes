@@ -1,15 +1,24 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-4">
-      <h2>My Heroes</h2>
-      <ul class="heroes">
-        <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-          <span class="badge">{{hero.id}}</span> {{hero.name}}
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="text-center">My Heroes</h2>
+        <ul class="heroes mx-auto">
+          <li *ngFor="let hero of heroes">
+            <a href routerLink="/detail/{{hero.id}}">
+              <span class="badge">{{hero.id}}</span> {{hero.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-8">
-      <app-hero-details [hero]="selectedHero"></app-hero-details>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <div class="container">
+        <app-messages></app-messages>
+      </div>
     </div>
   </div>
 </div>
